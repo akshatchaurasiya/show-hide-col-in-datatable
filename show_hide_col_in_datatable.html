@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>show_hide_col_in_datatable</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<label><input type="checkbox" name="name">Name</lablel>
+<label><input type="checkbox" name="age">Age</lablel>
+<label><input type="checkbox" name="salary">Salary</lablel>
+<script>
+  $("input:checkbox").attr("checked", false).click(function()
+{
+  var shcolumn="."+$(this).attr("name")
+  $(shcolumn).toggle();
+});
+</script>
+</head>
+<body>
+	<table border="1px">
+		<tr>
+			<th class="name">Name</th>
+			<th class="age">Age</th>
+			<th class="salary">Salary</th>
+		</tr>
+
+		<tr>
+			<td class="name">Akshat</td>
+			<td class="age">26</td>
+			<td class="salary">35,000</td>
+		</tr>
+
+
+		<tr>
+			<td class="name">Sumit</td>
+			<td class="age">20</td>
+			<td class="salary">30,000</td>
+		</tr>
+
+
+		<tr>
+			<td class="name">Chaurasiya_ji</td>
+			<td class="age">21</td>
+			<td class="salary">55,000</td>
+		</tr>
+
+
+		<tr>
+			<td class="name">Amit_ji</td>
+			<td class="age">24</td>
+			<td class="salary">40,000</td>
+		</tr>
+
+
+		<tr>
+			<td class="name">Kumar Sumit</td>
+			<td class="age">24</td>
+			<td class="salary">30,000</td>
+		</tr>
+
+
+		<tr>
+			<td class="name">CC</td>
+			<td class="age">22</td>
+			<td class="salary">25,000</td>
+		</tr>
+		
+	</table>
+
+</body>
+</html>
